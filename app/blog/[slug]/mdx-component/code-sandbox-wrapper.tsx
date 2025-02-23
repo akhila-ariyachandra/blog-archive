@@ -12,7 +12,6 @@ const CodeSandboxWrapper = ({ codeSandboxId }: CodeSandboxWrapperProps) => {
         src={`https://codesandbox.io/embed/${codeSandboxId}?autoresize=1&fontsize=14&hidenavigation=1&theme=dark`}
         title={title}
         allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
-        // eslint-disable-next-line @eslint-react/dom/no-unsafe-iframe-sandbox
         sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
         className="h-[500px] w-full overflow-hidden rounded-sm border-0"
         loading="lazy"
