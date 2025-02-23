@@ -85,10 +85,10 @@ export default function RootLayout({
           <footer className="container mt-auto max-w-4xl p-3 text-sm text-zinc-700 sm:p-4 sm:text-base dark:text-zinc-300">
             © {new Date().getFullYear()},{" "}
             <Link
-              href="/"
+              href="https://akhilaariyachandra.com"
               className="font-medium text-green-700 hover:underline dark:text-green-500"
             >
-              archive.akhilaariyachandra.com
+              akhilaariyachandra.com
             </Link>
           </footer>
         </ThemeProvider>
