@@ -14,7 +14,7 @@ export const getBaseURL = () => {
 
 export const getOgImage = (
   title: string,
-  subtitle: string,
+  subtitle?: string,
   content?: string,
 ) => {
   return new ImageResponse(
@@ -22,7 +22,7 @@ export const getOgImage = (
       <div tw="relative flex h-full w-full flex-col border-8 border-green-600 bg-zinc-900 p-8">
         <h1 tw="my-0 text-8xl text-zinc-100">{title}</h1>
 
-        <h2 tw="my-2 text-6xl text-zinc-300">{subtitle}</h2>
+        {!!subtitle && <h2 tw="my-0 text-6xl text-zinc-400">{subtitle}</h2>}
 
         {!!content && <h3 tw="my-0 text-4xl text-zinc-400">{content}</h3>}
 

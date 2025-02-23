@@ -41,6 +41,18 @@ const Post = defineCollection({
   },
 });
 
+const NoBodyPost = defineCollection({
+  name: "NoBodyPost",
+  directory: "content/posts",
+  include: "*.mdx",
+  schema: (z) => ({
+    title: z.string(),
+    description: z.string().max(140).optional(),
+    posted: z.string(),
+    updated: z.string().optional(),
+  }),
+});
+
 export default defineConfig({
-  collections: [Post],
+  collections: [Post, NoBodyPost],
 });
