@@ -62,6 +62,10 @@ const BlogPostPage = async (props: BlogPostPageProps) => {
 
   return (
     <>
+      <div className="mb-3 rounded-md bg-zinc-200 p-3 text-base sm:mb-4 sm:p-4 sm:text-lg dark:bg-zinc-900">
+        The content of this article might be outdated.
+      </div>
+
       <Title>{post.title}</Title>
 
       <time
